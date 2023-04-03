@@ -1,0 +1,85 @@
+.EventDIV {
+    padding: 100px;
+    background-color: #1c2237;
+    color: white;
+}
+
+.EventDIV {
+    background-color: #1c2237;
+    color: white;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.EventsHeading {
+    color: #f00946;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.events {
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: 50vh;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.events-items {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: gray;
+    color: #fff;
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+}
+
+.indicators > button {
+    margin: 10px;
+}
+
+.prev-button, .next-button {
+    background-color: white;
+    height: 2px;
+    border: none;
+    flex-shrink: 1;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    height: min-content;
+}
+
+.next-button:hover {
+    background-color: rgb(143, 143, 143);
+    color: rgb(27, 27, 27);
+}
+
+.prev-button:hover {
+    background-color: rgb(143, 143, 143);
+    color: rgb(37, 37, 37);
+}

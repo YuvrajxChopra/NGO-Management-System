@@ -1,0 +1,48 @@
+.sucess-message-maincontainer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    min-height: 5vh;
+    overflow: hidden;
+}
+
+
+.sucess-message-container{
+    text-align: center;
+    height: 100%;
+    min-width: 100;
+    padding: 16.6%;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 100%);
+    overflow: hidden;
+}
+
+.sucess-message-container h2{
+    color: #1c2237;
+}
+
+.sucess-message-container input[type="submit"] {
+    height: 40px;
+    font-size: 14px;
+    background-color: #1c2237;
+    color: white;
+    text-transform: uppercase;
+    width: 20%;
+    transition: .2s;
+    border: none;
+}
+
+
+.sucess-message-container input:hover {
+    border: 1px solid #322828;
+    font-size: 15px;
+}
+
+.footer-container {
+    bottom: 0;
+}
+
+.social-media-wrap {
+    margin-top: 5%;
+}

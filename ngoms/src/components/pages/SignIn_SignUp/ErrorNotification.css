@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    user-select: none;
+  }
+  
+
+.errorContainer{
+    width: 50%; 
+    height: 8%;
+    position:absolute; 
+    z-index:999; top: 15%; right:25%;
+    overflow: auto;
+    display: none;
+    text-align: center;
+}
+
+.errorBody{
+    height: 8%;
+    padding: 1%;
+    border-radius: 10px;
+    user-select: none; 
+    background-color: rgb(255, 225, 225);
+    color: rgb(195, 38, 38);
+    font-weight: bolder;
+    text-align: center;
+    border: 0.5px solid rgb(172, 149, 149);
+    display: inline-block;
+}

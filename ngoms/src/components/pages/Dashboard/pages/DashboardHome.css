@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #f4f8fb;
+}
+
+.DashboardHome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.WelcomeMessage {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+    border: 2rem;
+    margin: 5%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.box2 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+    border: 2rem;
+    margin: 5%;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 0.5);
+}
+
+.box3 {
+    background-color: white;
+    height: 200px;
+    width: 20%;
+    border: 2rem;
+    margin: 5%;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 0.5);
+}
+
+.box1, .box2, .box3 h2{
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+p{
+    font-size: smaller;
+    font-weight: bolder;
+}
