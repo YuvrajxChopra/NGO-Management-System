@@ -17,7 +17,7 @@ function Dashboard() {
   }
   else
   return (
-    <div>
+    <div className='HomeOfDash'>
         <SideBar>
         <Routes>
           <Route exact path='/' element ={<DashboardHome username={CurrUser}/>} />

@@ -4,6 +4,10 @@
   text-decoration: none;
   font: 'PT Sans', sans-serif;
 }
+.HomeOfDash{
+  height: 100%;
+  overflow: hidden;
+}
 .SideBarcontainer{
   display:flex;
 }
