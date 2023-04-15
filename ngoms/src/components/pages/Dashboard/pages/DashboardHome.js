@@ -30,7 +30,7 @@ function DashboardHome(props) {
   };
   const handleShowMore2 = () => {
     setShowMore2(true);
-    setTableData2(data);
+    setTableData2(data2);
   };
 
   return (
