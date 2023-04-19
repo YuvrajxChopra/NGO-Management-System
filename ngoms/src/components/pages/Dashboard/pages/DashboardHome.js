@@ -39,7 +39,7 @@ function DashboardHome(props) {
       <div className="boxes">
         <div className="box1">
           <h2>Last Money Donatations</h2>
-          <p>All Time</p>
+          <p style={{color: "#f00946"}}>All Time</p>
           <table>
             <thead>
               <tr>
@@ -66,7 +66,7 @@ function DashboardHome(props) {
         </div>
         <div className="box2">
           <h2>Last Items Donated</h2>
-          <p>All Time</p>
+          <p style={{color: "#f00946"}}>All Time</p>
           <table>
             <thead>
               <tr>
@@ -95,7 +95,7 @@ function DashboardHome(props) {
 
         <div className="box2">
           <h2>Last Donation</h2>
-          <p>10 Oct 2022</p>
+          <p style={{color: "#f00946"}}>10 Oct 2022</p>
         </div>
       </div>
     </div>

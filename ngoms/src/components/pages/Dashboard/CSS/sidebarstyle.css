@@ -1,0 +1,15 @@
+.SideBarcontainer div{
+    text-align: center;
+}
+.SideBarcontainer a{
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.SideBarcontainer .link_text{
+    margin-top: 10%;
+}
+
+.SideBarcontainer svg:hover{
+    color: black;
+}

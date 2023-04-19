@@ -8,9 +8,8 @@ import {
 
 }from "react-icons/fa";
 import { NavLink, Link } from 'react-router-dom';
-import {useNavigate} from "react-router-dom"
-
-
+import {useNavigate} from "react-router-dom";
+import './CSS/sidebarstyle.css';
 const Sidebar = ({children}) => {
     const navigate = useNavigate();
     const[isOpen ,setIsOpen] = useState(false);

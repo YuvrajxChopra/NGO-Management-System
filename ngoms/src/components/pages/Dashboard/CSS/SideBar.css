@@ -5,6 +5,9 @@
     justify-content: start;
     align-items: center;
   }
+  .SideBarcontainer{
+    font-family: 'PT Sans', sans-serif;
+  }
   
   .menu-bars {
     margin-left: 2rem;
@@ -70,3 +73,4 @@
   span {
     margin-left: 16px;
   }
+
