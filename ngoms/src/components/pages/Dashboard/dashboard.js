@@ -1,36 +1,64 @@
 import React from 'react';
 import './CSS/dashboard.css';
 import SideBar from './Sidebar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {useEffect, useState} from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import DashboardHome from './pages/DashboardHome';
 import Money from './pages/Money';
 import Items from './pages/Items';
-import {useNavigate} from "react-router-dom"
-
+import { useNavigate } from "react-router-dom"
+import {
+  FaTh,
+  FaBars,
+  FaDonate,
+  FaHandsHelping,
+  FaSignOutAlt,
+} from "react-icons/fa";
+const menuItem = [
+  {
+    path: "/Dashboard",
+    name: "Dashboard",
+    icon: <FaTh />
+  },
+  {
+    path: "/Dashboard/Money",
+    name: "Money Donation",
+    icon: <FaDonate />
+  },
+  {
+    path: "/Dashboard/Items",
+    name: "Items Donation",
+    icon: <FaHandsHelping />
+  },
+  {
+    path: "/SignInSignUp",
+    name: "LogOut",
+    icon: <FaSignOutAlt />
+  }
+]
 function Dashboard() {
   const navigate = useNavigate();
   let CurrUser = DashboardLoad();
-  if(CurrUser === "NaN" || CurrUser === undefined || CurrUser === ""){
+  if (CurrUser === "NaN" || CurrUser === undefined || CurrUser === "") {
     navigate("/SignInSignUp")
-    return(<div style={{textAlign:"center"}}><h5>Redirecting...</h5></div>)
+    return (<div style={{ textAlign: "center" }}><h5>Redirecting...</h5></div>)
   }
   else
-  return (
-    <div className='HomeOfDash'>
-        <SideBar>
-        <Routes>
-          <Route exact path='/' element ={<DashboardHome username={CurrUser}/>} />
-          <Route exact path="/DashboardHome" element={<DashboardHome username={CurrUser}/>} />
-          <Route exact path="/Money" element={<Money />} />
-          <Route exact path="/Items"  element={<Items />} />
-        </Routes>
+    return (
+      <div className='HomeOfDash'>
+        <SideBar menuItem={menuItem}>
+          <Routes>
+            <Route exact path='/' element={<DashboardHome username={CurrUser} />} />
+            <Route exact path="/DashboardHome" element={<DashboardHome username={CurrUser} />} />
+            <Route exact path="/Money" element={<Money />} />
+            <Route exact path="/Items" element={<Items />} />
+          </Routes>
         </SideBar>
-    </div>
-  );
+      </div>
+    );
 }
 
-function DashboardLoad(){
+function DashboardLoad() {
   const [initialState, setIntialState] = useState([]);
   useEffect(() => {
     fetch("http://localhost:3001/dashboardload")
