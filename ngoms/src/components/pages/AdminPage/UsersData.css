@@ -1,0 +1,106 @@
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.UsersData {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.UsersDataTable {
+    background-color: white;
+    width: 80%;
+    margin-left: 0%;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 1);
+    text-align: center;
+    margin-top: 4%;
+    font-weight: bolder;
+    margin-bottom: 0%;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+    border: 2px solid #1c2237;
+    max-height: 50%;
+    height: 50%;
+}
+
+.UsersDataTableContainer{
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.UsersData h2 {
+    font-weight: bolder;
+    margin-bottom: 1%;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+}
+
+.UsersDataTable table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+}
+
+.UsersDataTable th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.UsersDataTable th {
+    background-color: #f6f1f1;
+}
+
+.UsersDataTable tr:hover {
+    background-color: #f5f5f5;
+}
+
+.ChangePasswordFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 80%;
+    margin-left: 0%;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 1);
+    text-align: center;
+    overflow-y: auto;
+    margin-top: 4%;
+    font-weight: bolder;
+    margin-bottom: 0%;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+    border: 2px solid #1c2237;
+}
+
+.ChangePasswordFields input,
+select {
+    width: 250px;
+    margin: 1%;
+}
+
+.UsersData button {  
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #1c2237;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.UsersData button:hover{
+    font-size: 16.5px;
+}
