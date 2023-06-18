@@ -4,7 +4,7 @@ import './UsersData.css';
 const UsersData = () => {
   const data = [
     {
-      username: 'johndoe',
+      username: 'user1',
       firstName: 'John',
       lastName: 'Doe',
       dob: '01/01/1990',
@@ -12,9 +12,9 @@ const UsersData = () => {
       password: 'password1'
     },
     {
-      username: 'janedoe',
+      username: 'user2',
       firstName: 'Jane',
-      lastName: 'Doe',
+      lastName: 'Down',
       dob: '02/14/1992',
       phone: '098-765-4321',
       password: 'password2'
@@ -97,7 +97,6 @@ const UsersData = () => {
   const ChangePassword = () => {
     const [username, setUsername] = useState('');
     const [newPassword, setNewPassword] = useState('');
-    const [confirmNewPassword, setConfirmNewPassword] = useState('');
 
     const handleSubmit = (event) => {
       event.preventDefault();

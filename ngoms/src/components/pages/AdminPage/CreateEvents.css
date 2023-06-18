@@ -1,0 +1,93 @@
+.UploadEventForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 80%;
+    box-shadow: 1px 1px 20px -15px rgba(0, 0, 0, 1);
+    text-align: center;
+    overflow-y: auto;
+    margin-top: 2%;
+    font-weight: bolder;
+    margin-bottom: 0%;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+    border: 2px solid #1c2237;
+    margin-left: 175px;
+    margin-bottom: 1%;
+}
+
+.UploadEventForm h2{
+    font-weight: bolder;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+}
+
+.UploadEventForm label{
+    font-weight: bold;
+    font-size: large;
+}
+
+.UploadEventForm input{
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #1c2237;
+    padding: 1%;
+    margin: 1%;
+}
+
+.UploadEventForm input[type='text']{
+    width: 350px;
+}
+
+
+.UploadEventForm textarea{
+    border: 2px solid #1c2237;
+    font-size: large;
+    color: #1c2237;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.UploadEventForm button {  
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #1c2237;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1%;
+    transition: background-color 0.2s ease-in-out;
+    width: 200px;
+}
+
+.UploadEventForm button:hover{
+    font-size: 16.5px;
+}
+
+.eventlisttittle{
+        margin-right: 100px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+}
+
+.listofevent{
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #3A4261;
+    margin: 1%; 
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.EventsList h2{
+    font-weight: bolder;
+    border-radius: 0%;
+    padding: 1%;
+    color: #1c2237;
+}
