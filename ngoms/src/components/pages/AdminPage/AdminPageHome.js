@@ -2,7 +2,10 @@ import React from 'react';
 
 function AdminPageHome() {
   return (
-    <h1> Admin Page Home </h1>
+    <div className='AdminPageHomePage'>
+      <h1> Welcome Admin :) </h1>
+      
+    </div>
   );
 }
 
