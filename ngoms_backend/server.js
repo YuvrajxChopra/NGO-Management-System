@@ -130,7 +130,10 @@ app.post("/login", parser, (req, res)=>{
     session  = req.session;
     session.userid =   result[0].USERNAME;
     console.log("login "  +   req.session.userid);
-    res.redirect("http://localhost:3000/Dashboard");
+    if(req.body.username === 'admin')
+      res.redirect("http://localhost:3000/AdminPage");
+    else
+      res.redirect("http://localhost:3000/Dashboard");
     res.end();
   }
   else{
@@ -159,6 +162,22 @@ app.get("/logout", (req, res)=>{
   res.redirect("http://localhost:3000/SignInSignUp");
 })
 
+app.get("/admindashboardload", (req, res)=>{
+  let temp =
+    {
+      username: session.userid
+    };
+  if(session === "")
+    temp.username =  "NaN"
+  res.setHeader("content-type", "application/json");
+  res.send(temp);
+})
+
+app.get("/logout", (req, res)=>{
+  req.session.destroy();
+  session = ""
+  res.redirect("http://localhost:3000/SignInSignUp");
+})
 
 function signupValidation(data){
   if(data.first_name.trim() == "")

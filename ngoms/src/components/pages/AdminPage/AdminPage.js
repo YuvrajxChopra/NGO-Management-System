@@ -1,14 +1,15 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom"
 import './AdminPage.css';
 import Sidebar from '../Dashboard/Sidebar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import {
     FaTh,
     FaSignOutAlt,
     FaDatabase,
     FaUsers,
     FaCalendar,
-    FaPenSquareO
 
 }from "react-icons/fa";
 import DonationsData from './DonationsData';
@@ -52,6 +53,13 @@ const menuItem=[
 ]
 
 function AdminPage() {
+  const navigate = useNavigate();
+  let CurrUser = DashboardLoad();
+  if (CurrUser === "NaN" || CurrUser === undefined || CurrUser === "") {
+    navigate("/SignInSignUp")
+    return (<div style={{ textAlign: "center" }}><h5>Redirecting...</h5></div>)
+  }
+  else
   return (
     <div>
         <Sidebar menuItem={menuItem}>
@@ -66,5 +74,19 @@ function AdminPage() {
     </div>
   );
 }
-
+function DashboardLoad() {
+  const [initialState, setIntialState] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3001/admindashboardload")
+      .then((res) => res.json())
+      .then((res) => {
+        if (res === "" || res.username === "NaN") {
+          setIntialState(res)
+        } else {
+          setIntialState(res);
+        }
+      });
+  });
+  return initialState.username;
+}
 export default AdminPage;
